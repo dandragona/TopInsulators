@@ -46,9 +46,9 @@ for i = 1:N1
         [Vs_right,D] = eig(H(kxs(i),kys(mod(j,N2)+1),u));
 
         % Gather wave-functions.
-        nkl = Vs(:,2);
-        nkl_up = Vs_up(:,2);
-        nkl_right = Vs_right(:,2);
+        nkl = Vs(:,1);
+        nkl_up = Vs_up(:,1);
+        nkl_right = Vs_right(:,1);
 
         % Calculate Link Variable
         U1(i,j) = dot(nkl, nkl_up);
